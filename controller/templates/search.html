@@ -7,7 +7,7 @@
         />
         <!-- Bootstrap CSS -->
         {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/search_style.css' %}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
         <title>Search the Top News Sources</title>
@@ -15,14 +15,14 @@
 
     <body>
         <header>
-            <h5><a  class="float-left" href="/signup">SignIn</a><h5>
-            <h5><a  class="float-right" href="/logout">Logout</a><h5>
-            <br>
-            <p><h5><a  class="float-left" href="/login">Login</a><h5></p>
-            
+            <nav class="float-left">
+                <a  class="button" style="text-decoration:none;" href="/signup">Sign Up</a>
+                <br>
+                <a  class="button" style="text-decoration:none;" href="/login">Log in</a>
+            </nav>
         </header>
             
-        <h1 class = "text-center">Looking for specific article??</h1>
+        <h1 class = "text-center">Looking for a specific BBC article?</h1>
         <div class="container p-4 mb-4 bg-dark text-light"mw-80 mh-100">
             <div class="main">
                 <form action="/bbc" method="POST">
@@ -30,7 +30,7 @@
                     <div class="input-group">
                             <input type="text" class="form-control rounded w-50 p-3" placeholder="Search" aria-label="Search"
                             aria-describedby="search-addon" id='searchbar' name='searchbar' autocomplete='off' />
-                            <button type="submit" id='searchbutton' class="btn btn-primary">Search</button>
+                            <button type="submit" id='searchbutton' class="btn btn-danger">Search</button>
                             <div id='searchresults'></div>
                         
                     </div>
