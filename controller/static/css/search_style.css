@@ -34,7 +34,7 @@ html body {
 }
 
 nav{
-    margin: 10px;
+    margin: 20px;
 }
 
 .container {
@@ -52,8 +52,10 @@ nav{
 
 .pastsearchesContainer h2{
     color: #DC3545;
+    margin-left: 40px;
 }
 
 .pastarticlesContainer h2{
     color: #DC3545;
+    margin-left: 40px;
 }
